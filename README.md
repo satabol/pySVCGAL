@@ -16,3 +16,12 @@ For developer
 for local install from package folder: "E:\install\Blender\blender-3.6.12-windows-x64\3.6\python\Scripts\pip.exe" install .
 
 To uninstall write a name: "E:\install\Blender\blender-3.6.12-windows-x64\3.6\python\Scripts\pip.exe" uninstall pySVCGAL
+
+Update package on PyPi
+----------------------
+
+```
+python -m build
+twine upload dist/*
+
+```
