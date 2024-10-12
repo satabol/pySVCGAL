@@ -7,7 +7,7 @@ from sys import platform
 def load_library():
     #print("==== load_library pySVCGAL ==========================================")
     if platform == 'linux' or platform == 'linux2':        
-        SVCGAL_clib = ctypes.CDLL(os.path.join(os.path.dirname(__file__),'ctypes_SVCGAL.so'))
+        SVCGAL_clib = ctypes.CDLL(os.path.join(os.path.dirname(__file__),'libctypes_SVCGAL.so'))
         pass
     elif platform == 'darwin':
         # OSX 
